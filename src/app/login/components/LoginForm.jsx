@@ -13,7 +13,7 @@ export default function LoginForm() {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({ email, password })
+        // console.log({ email, password })
         toast("Submitting...")
         try {
             const response = await signIn("credentials", { email, password, callbackUrl: "/", redirect: false, })
